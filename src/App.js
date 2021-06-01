@@ -168,6 +168,7 @@ class App extends React.Component {
           <Results
             shown={this.state.activeRowIndex === 3}
             prize={this.state.prize}
+            endVal={this.state.rows[0].endValue}
           />
         </div>
       </div>
