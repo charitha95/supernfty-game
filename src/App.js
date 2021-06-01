@@ -259,7 +259,7 @@ class Results extends React.Component {
           </div>
         ) : (
           <div className="disResult">
-            <img src={tryI} alt="win" />
+            <img className="loose" src={tryI} alt="loose" />
           </div>
         )}
       </div>

@@ -113,17 +113,21 @@ body {
   background: #000000a1;
   flex-direction: column;
   img {
-    // height: 50vh;
     margin: auto;
     max-width: 50vw;
+    margin-top: 35%;
+    padding-bottom: 21px;
+  }
+  .loose {
+    margin: auto;
+    margin-top: auto;
   }
   p {
     color: #fff;
     font-size: 26px;
     text-shadow: none;
     margin: auto;
-    margin-top: 10%;
-    margin-bottom: 50%;
+    margin-bottom: 45%;
   }
 }
 .columns {
