@@ -107,15 +107,24 @@ body {
 }
 .disResult {
   height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background: #000000a1;
-    img {
-
-      height: 50vh;
-      margin: auto;
-    }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #000000a1;
+  flex-direction: column;
+  img {
+    // height: 50vh;
+    margin: auto;
+    max-width: 50vw;
+  }
+  p {
+    color: #fff;
+    font-size: 26px;
+    text-shadow: none;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 50%;
+  }
 }
 .columns {
   background-color: $color-game-bg;

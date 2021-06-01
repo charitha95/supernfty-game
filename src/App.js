@@ -245,6 +245,7 @@ class Results extends React.Component {
         {this.props.prize === 0 ?
          <div className="disResult">
          <img src={win} alt="win"/>
+         <p>Owner: <strong>DaBozz</strong></p>
        </div>
        :
        <div className="disResult">
