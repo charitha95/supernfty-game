@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.scss";
-import win from './win.png';
-import tryI from './try.png';
+import win from "./win.png";
+import tryI from "./try.png";
 
 class App extends React.Component {
   constructor() {
@@ -243,17 +243,25 @@ class Results extends React.Component {
     var classList = "results " + shown;
     return (
       <div className={classList}>
-        {this.props.prize === 0 ?
-         <div className="disResult">
-         <img src={win} alt="win"/>
-         <p>Owner: <strong>DaBozz</strong></p>
-       </div>
-       :
-       <div className="disResult">
-       <img src={tryI} alt="win"/>
-
-     </div>}
-     
+        {this.props.prize === 0 ? (
+          <div className="disResult">
+            <img src={win} alt="win" />
+            <p>
+              Owner:{" "}
+              <strong>
+                {this.props.endVal === 0
+                  ? "@Adinalini.eth"
+                  : this.props.endVal === 1
+                  ? "@DaBoZz"
+                  : "@JO7.eth"}
+              </strong>
+            </p>
+          </div>
+        ) : (
+          <div className="disResult">
+            <img src={tryI} alt="win" />
+          </div>
+        )}
       </div>
     );
   }
